@@ -32,10 +32,6 @@
     height: 20px;
   }
 
-  .navbar {
-    background-color: #546e7a;
-  }
-
   .content {
     margin: auto;
     margin-top: 15px;
@@ -54,7 +50,8 @@
   }
 
   .card {
-    width: 500px;
+    display: inline-block;
+    width: 45%;
     box-shadow: 10px 10px #102027;
     animation-name: card-effect;
     animation-duration: 2s;
@@ -83,36 +80,16 @@
   }
 
   .header-image {
-    background-image: url("../assets/profilePIc.png");
+    background-image: url("assets/profilePic.png");
     background-size: cover;
   }
 
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-    .card-container > *:not(.circle-link),
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .card {
+      display: block;
+      width: 90%;
     }
   }
 </style>
@@ -141,10 +118,10 @@
       </mat-card-content>
       <mat-card-actions class="card-actions">
         <a href="https://www.linkedin.com/in/trevor-knutson-205413168/">
-          <img class="socials" src="./assets/linkedin.png" alt="linkedin" />
+          <img class="socials" src="assets/linkedin.png" alt="linkedin" />
         </a>
         <a href="https://www.github.com/treknuts">
-          <img class="socials" src="./assets/git-icon.png" alt="github" />
+          <img class="socials" src="assets/git-icon.png" alt="github" />
         </a>
       </mat-card-actions>
     </mat-card>
