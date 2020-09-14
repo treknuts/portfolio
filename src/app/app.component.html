@@ -40,8 +40,31 @@
     margin: auto;
     margin-top: 15px;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes card-effect {
+    from {
+      box-shadow: -10px -10px #102027;
+    }
+    to {
+      box-shadow: 10px 10px #102027;
+    }
+  }
+
+  .card {
+    width: 500px;
+    box-shadow: 10px 10px #102027;
+    animation-name: card-effect;
+    animation-duration: 2s;
+  }
+
+  .card-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .card-actions {
@@ -50,16 +73,16 @@
     justify-content: space-evenly;
   }
 
+  .resume-btn {
+    max-width: 150px;
+  }
+
   .socials {
     height: 42px;
     width: 42px;
   }
 
-  .example-card {
-    width: 400px;
-  }
-
-  .example-header-image {
+  .header-image {
     background-image: url("../assets/profilePIc.png");
     background-size: cover;
   }
@@ -95,24 +118,28 @@
 </style>
 
 <div class="header" role="main">
-  <mat-toolbar class="navbar">
-    <img class="socials" src="./assets/tk-icon.png" alt="logo" />
-  </mat-toolbar>
   <div class="content">
-    <mat-card class="example-card">
+    <mat-card class="card">
       <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
+        <div mat-card-avatar class="header-image"></div>
         <mat-card-title>Trevor Knutson</mat-card-title>
         <mat-card-subtitle>Software Engineer</mat-card-subtitle>
       </mat-card-header>
-      <mat-card-content>
+      <mat-card-content class="card-content">
         <p>
           Greetings! I am a senior Computer Science student at North Dakota
-          State University.
+          State University on track to graduate this December. I cannot wait to
+          start my career as a Software Engineer. I am an experienced web
+          developer and look forward to become an asset at <b>your</b> company!
+          Prospective employers (or anyone who is curious) are welcome to take a
+          look at my resume.
         </p>
+        <br />
+        <button class="resume-btn" mat-stroked-button (click)="downloadPdf()">
+          View Resume
+        </button>
       </mat-card-content>
       <mat-card-actions class="card-actions">
-        <button mat-stroked-button (click)="downloadPdf()">View Resume</button>
         <a href="https://www.linkedin.com/in/trevor-knutson-205413168/">
           <img class="socials" src="./assets/linkedin.png" alt="linkedin" />
         </a>
