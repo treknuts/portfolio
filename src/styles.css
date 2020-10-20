@@ -12,4 +12,7 @@ body {
   color: #4f5b62;
   background-color: #102027;
   background-image: url("../src/assets/prism.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

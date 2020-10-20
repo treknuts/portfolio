@@ -1,131 +1,30 @@
-<style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  a {
-    margin: 8px 8px;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .spacer {
-    flex: 1 1 auto;
-  }
-
-  .logo {
-    height: 20px;
-  }
-
-  .content {
-    margin: auto;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @keyframes card-effect {
-    from {
-      box-shadow: -10px -10px #102027;
-    }
-    to {
-      box-shadow: 10px 10px #102027;
-    }
-  }
-
-  .card {
-    display: inline-block;
-    width: 45%;
-    box-shadow: 10px 10px #102027;
-    animation-name: card-effect;
-    animation-duration: 2s;
-  }
-
-  .card-content {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-actions {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-  }
-
-  .resume-btn {
-    max-width: 150px;
-  }
-
-  .socials {
-    height: 42px;
-    width: 42px;
-  }
-
-  .header-image {
-    background-image: url("assets/profilePic.png");
-    background-size: cover;
-  }
-
-  /* Responsive styles */
-  @media only screen and (max-width: 600px) {
-    /* For mobile phones: */
-    .card {
-      display: block;
-      width: 90%;
-    }
-  }
-</style>
-
-<div class="header" role="main">
-  <div class="content">
-    <mat-card class="card">
-      <mat-card-header>
-        <div mat-card-avatar class="header-image"></div>
-        <mat-card-title>Trevor Knutson</mat-card-title>
-        <mat-card-subtitle>Software Engineer</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content class="card-content">
-        <p>
-          Greetings! I am a senior Computer Science student at North Dakota
-          State University on track to graduate this December. I cannot wait to
-          start my career as a Software Engineer. I am an experienced web
-          developer and look forward to becoming an asset at
-          <b>your</b> company! Prospective employers (or anyone who is curious)
-          are welcome to take a look at my resume.
-        </p>
-        <br />
-        <button class="resume-btn" mat-stroked-button (click)="downloadPdf()">
-          View Resume
-        </button>
-      </mat-card-content>
-      <mat-card-actions class="card-actions">
-        <a href="https://www.linkedin.com/in/trevor-knutson-205413168/">
-          <img class="socials" src="assets/linkedin.png" alt="linkedin" />
-        </a>
-        <a href="https://www.github.com/treknuts">
-          <img class="socials" src="assets/git-icon.png" alt="github" />
-        </a>
-      </mat-card-actions>
-    </mat-card>
-  </div>
-</div>
-
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="header-image"></div>
+    <mat-card-title>Trevor Knutson</mat-card-title>
+    <mat-card-subtitle>Software Engineer</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <p>
+      Greetings! I am a senior Computer Science student at North Dakota State
+      University on track to graduate this December. I cannot wait to start my
+      career as a Software Engineer. I am an experienced web developer and look
+      forward to becoming an asset at
+      <b>your</b> company! Prospective employers (or anyone who is curious) are
+      welcome to take a look at my resume.
+    </p>
+    <button class="resume-btn" mat-stroked-button (click)="downloadPdf()">
+      View Resume
+    </button>
+  </mat-card-content>
+  <mat-card-actions class="card-actions">
+    <a href="https://www.linkedin.com/in/trevor-knutson-205413168/">
+      <img class="socials" src="assets/linkedin.png" alt="linkedin" />
+    </a>
+    <a href="https://www.github.com/treknuts">
+      <img class="socials" src="assets/git-icon.png" alt="github" />
+    </a>
+  </mat-card-actions>
+</mat-card>
+<app-projects></app-projects>
 <router-outlet></router-outlet>
