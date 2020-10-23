@@ -1,30 +1,48 @@
-<mat-card class="card">
-  <mat-card-header>
-    <div mat-card-avatar class="header-image"></div>
-    <mat-card-title>Trevor Knutson</mat-card-title>
-    <mat-card-subtitle>Software Engineer</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content class="card-content">
-    <p>
-      Greetings! I am a senior Computer Science student at North Dakota State
-      University on track to graduate this December. I cannot wait to start my
-      career as a Software Engineer. I am an experienced web developer and look
-      forward to becoming an asset at
-      <b>your</b> company! Prospective employers (or anyone who is curious) are
-      welcome to take a look at my resume.
-    </p>
-    <button class="resume-btn" mat-stroked-button (click)="downloadPdf()">
-      View Resume
-    </button>
-  </mat-card-content>
-  <mat-card-actions class="card-actions">
-    <a href="https://www.linkedin.com/in/trevor-knutson-205413168/">
-      <img class="socials" src="assets/linkedin.png" alt="linkedin" />
-    </a>
-    <a href="https://www.github.com/treknuts">
-      <img class="socials" src="assets/git-icon.png" alt="github" />
-    </a>
-  </mat-card-actions>
-</mat-card>
-<app-projects></app-projects>
+<mat-tab-group mat-align-tabs="start">
+  <mat-tab label="Home">
+    <div class="intro-div">
+      <h1>
+        Hello, I'm <span class="name">{{ name }}</span
+        >.
+      </h1>
+      <h1>I'm a {{ jobTitle }}.</h1>
+      <div style="margin-top: 8px">
+        <button mat-stroked-button color="primary" (click)="showWork()">
+          View My Work
+        </button>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="About">Content 2</mat-tab>
+  <mat-tab label="Portfolio">Content 3</mat-tab>
+</mat-tab-group>
+
+<!-->
+  <mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title>{{ first }} {{ last }}</mat-card-title>
+      <mat-card-subtitle>{{ jobTitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-divider style="color: black"></mat-divider>
+    <br />
+    <mat-card-content class="card-content">
+      <p>
+        {{ about }}
+      </p>
+      <button mat-stroked-button class="resume-btn" (click)="downloadPdf()">
+        View Resume
+      </button>
+    </mat-card-content>
+    <mat-card-actions class="card-actions">
+      <a href="{{ linkedin }}">
+        <img class="socials" src="assets/linkedin.png" alt="linkedin" />
+      </a>
+      <a href="{{ github }}">
+        <img class="socials" src="assets/git-icon.png" alt="github" />
+      </a>
+    </mat-card-actions>
+  </mat-card>
+</div> 
+!-->
 <router-outlet></router-outlet>

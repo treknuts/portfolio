@@ -1,9 +1,20 @@
-<div style="color: white">
+<div class="card-div">
   <ul *ngFor="let proj of results" style="list-style: none">
     <li>
-      Name: {{ proj.name }}<br />
-      Description: {{ proj.description }}<br />
-      Github: {{ proj.githubUrl }}
+      <mat-card class="project-card">
+        <mat-card-header class="card-header"
+          ><h3>{{ proj.name }}</h3></mat-card-header
+        >
+        <mat-divider style="color: black"></mat-divider>
+        <mat-card-content class="card-content">{{
+          proj.description
+        }}</mat-card-content>
+        <mat-card-actions class="card-actions">
+          <a href="{{ proj.githubUrl }}">
+            <img class="socials" src="assets/git-icon.png" alt="github" />
+          </a>
+        </mat-card-actions>
+      </mat-card>
     </li>
   </ul>
 </div>

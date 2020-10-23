@@ -1,0 +1,66 @@
+.card-div {
+  display: flex;
+  margin: 100px;
+  width: 90%;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .card-div {
+    flex-direction: column;
+  }
+}
+
+@keyframes card-effect {
+  from {
+    box-shadow: -10px -10px #102027;
+  }
+  to {
+    box-shadow: 10px 10px #102027;
+  }
+}
+
+.project-card {
+  color: white;
+  background-color: #424242;
+  width: 400px;
+  height: 400px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px #102027;
+}
+
+.card-header {
+  padding: 10px;
+}
+
+.card-content {
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-actions {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  position: relative;
+  height: 60px;
+}
+
+.socials {
+  position: absolute;
+  left: 5px;
+  bottom: 1px;
+  margin: 0;
+  height: 42px;
+  width: 42px;
+}

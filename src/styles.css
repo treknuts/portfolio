@@ -8,11 +8,22 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Rubik";
+  font-weight: 600;
   color: #4f5b62;
   background-color: #102027;
   background-image: url("../src/assets/prism.png");
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 30px;
 }

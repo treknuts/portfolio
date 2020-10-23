@@ -13,7 +13,6 @@ export class ProjectsComponent implements OnInit {
   results: Observable<any>;
 
   constructor(private projectsService: ProjectsService) {
-    let projects: string[] = [];
     projectsService.resolveProjects().subscribe((data) => {
       this.results = data.data;
     });
