@@ -1,4 +1,4 @@
-<mat-tab-group mat-align-tabs="start">
+<mat-tab-group mat-align-tabs="start" style="color: white;">
   <mat-tab label="Home">
     <div class="intro-div">
       <h1>
@@ -6,43 +6,10 @@
         >.
       </h1>
       <h1>I'm a {{ jobTitle }}.</h1>
-      <div style="margin-top: 8px">
-        <button mat-stroked-button color="primary" (click)="showWork()">
-          View My Work
-        </button>
-      </div>
     </div>
   </mat-tab>
-  <mat-tab label="About">Content 2</mat-tab>
-  <mat-tab label="Portfolio">Content 3</mat-tab>
+  <mat-tab label="About">{{ about }}</mat-tab>
+  <mat-tab label="Portfolio"><app-projects></app-projects></mat-tab>
 </mat-tab-group>
 
-<!-->
-  <mat-card class="card">
-    <mat-card-header>
-      <div mat-card-avatar class="header-image"></div>
-      <mat-card-title>{{ first }} {{ last }}</mat-card-title>
-      <mat-card-subtitle>{{ jobTitle }}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-divider style="color: black"></mat-divider>
-    <br />
-    <mat-card-content class="card-content">
-      <p>
-        {{ about }}
-      </p>
-      <button mat-stroked-button class="resume-btn" (click)="downloadPdf()">
-        View Resume
-      </button>
-    </mat-card-content>
-    <mat-card-actions class="card-actions">
-      <a href="{{ linkedin }}">
-        <img class="socials" src="assets/linkedin.png" alt="linkedin" />
-      </a>
-      <a href="{{ github }}">
-        <img class="socials" src="assets/git-icon.png" alt="github" />
-      </a>
-    </mat-card-actions>
-  </mat-card>
-</div> 
-!-->
 <router-outlet></router-outlet>

@@ -9,14 +9,6 @@ const FileSaver = require('file-saver');
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  // primary
-  // dark = #0077c2;
-  // primary = #42a5f5;
-  // light = #80d6ff;
-  // secondary
-  // dark = #c77800;
-  // primary = #ffa726;
-  // light = #ffd95b
   name = 'Trevor Knutson';
   jobTitle = 'Software Developer';
   about =
@@ -31,10 +23,6 @@ export class AppComponent {
   downloadPdf() {
     const pdfUrl = './assets/Resume.pdf';
     window.open(pdfUrl);
-  }
-
-  showWork() {
-    alert('I code sometimes! xD');
   }
 
   constructor() {}
