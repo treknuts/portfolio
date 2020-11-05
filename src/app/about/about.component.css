@@ -1,0 +1,74 @@
+.main {
+  font-size: large;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+img {
+  border-radius: 8px;
+  background-color: none;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+
+.close {
+  height: 10px;
+  width: 10px;
+  background-color: tomato;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.min {
+  height: 10px;
+  width: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.max {
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.terminal {
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+  width: 40%;
+  border-radius: 3px;
+  background-color: #cccccc;
+}
+
+.code {
+  margin: 15px 0px 0px 0px;
+  border-radius: 0px 0px 3px 3px;
+  padding: 12px;
+  background-color: #212121;
+  color: #cccccc;
+}
+
+.folder {
+  color: steelblue;
+}
+
+.cmd {
+  color: #8bc34a;
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+}

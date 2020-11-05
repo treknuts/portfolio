@@ -1,0 +1,55 @@
+<div class="main">
+  <div class="terminal">
+    <span class="options">
+      <div class="close"></div>
+      <div class="min"></div>
+      <div class="max"></div>
+    </span>
+    <div class="code">
+      <p>
+        <span><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>
+        <span class="folder"
+          ><i class="fa fa-folder-open" aria-hidden="true"></i
+        ></span>
+        ~ > <span class="cmd">echo</span> Trevor.origin
+      </p>
+      <pre>    '{{ origin }}'</pre>
+      <p>
+        <span><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>
+        <span class="folder"
+          ><i class="fa fa-folder-open" aria-hidden="true"></i
+        ></span>
+        ~ > <span class="cmd">echo</span> Trevor.education
+      </p>
+      <pre>    '{{ education }}'</pre>
+      <p>
+        <span><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>
+        <span class="folder">
+          <i class="fa fa-folder-open" aria-hidden="true"></i>
+        </span>
+        ~ > <span class="cmd">echo</span> Trevor.major
+      </p>
+      <pre>    '{{ major }}'</pre>
+      <p>
+        <span><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>
+        <span class="folder">
+          <i class="fa fa-folder-open" aria-hidden="true"></i>
+        </span>
+        ~ > <span class="cmd">echo</span> Trevor.experience
+      </p>
+      <pre>
+   [ 
+       {{ experience.join(",\n       ") }} 
+   ]</pre
+      >
+      <p>
+        <span><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>
+        <span class="folder">
+          <i class="fa fa-folder-open" aria-hidden="true"></i>
+        </span>
+        ~ > <span class="cmd">echo</span> Trevor.interests
+      </p>
+      <pre>   [ {{ interests.join(", ") }} ]</pre>
+    </div>
+  </div>
+</div>

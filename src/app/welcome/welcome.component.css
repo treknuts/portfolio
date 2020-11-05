@@ -1,0 +1,38 @@
+.welc-body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-div {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-btn {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #212121;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+}
+
+.greeting {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.welcome {
+  color: white;
+  font-size: xxx-large;
+}
+.welcome:after {
+  content: " ";
+  white-space: pre;
+}
