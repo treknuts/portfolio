@@ -3,7 +3,7 @@
   margin: 100px;
   width: 90%;
   height: auto;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
 }
@@ -25,8 +25,11 @@
 }
 
 .card {
-  width: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 80%;
   height: auto;
+  background-color: white;
   border-color: #212121;
   border: 2px solid #212121;
   border-radius: 8px;
@@ -40,6 +43,7 @@
 
 .card-header {
   padding: 10px;
+  border-bottom: 2px solid #212121;
 }
 
 .card-content {
@@ -52,6 +56,10 @@
 
 .card-footer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
+}
+
+a {
+  color: #212121;
 }
