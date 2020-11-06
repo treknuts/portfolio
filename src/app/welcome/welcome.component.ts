@@ -9,9 +9,6 @@ import Typewriter from 't-writer.js';
 export class WelcomeComponent implements OnInit {
   @ViewChild('welcome') introElement;
   @ViewChild('titles') titlesElement;
-  title = 'resume-app';
-  linkedin = 'https://www.linkedin.com/in/trevor-knutson-205413168/';
-  github = 'https://www.github.com/treknuts';
 
   downloadPdf() {
     const pdfUrl = './assets/Resume.pdf';
@@ -47,11 +44,11 @@ export class WelcomeComponent implements OnInit {
       800,
       'a Software Engineer.',
       'a Web Developer.',
-      'a Comp Sci student.',
-      'a nerd',
+      'a Computer Science student.',
+      'a nerd.',
       'a gamer.',
       'a father.',
-      'a life-long learner'
+      'a life-long learner.'
     );
   }
 }

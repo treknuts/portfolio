@@ -1,12 +1,52 @@
 <div class="navbar">
   <nav class="nav">
-    <a class="tab" [routerLink]="['welcome']"> home </a>
+    <a
+      id="home"
+      class="tab"
+      [routerLink]="['welcome']"
+      (click)="scrollToElement('1')"
+    >
+      home
+    </a>
     <span class="divider">|</span>
-    <a class="tab" [routerLink]="['about']"> about </a>
+    <a
+      id="about"
+      class="tab"
+      [routerLink]="['about']"
+      (click)="scrollToElement('2')"
+    >
+      about
+    </a>
     <span class="divider">|</span>
-    <a class="tab" [routerLink]="['work']"> work </a>
+    <a
+      id="work"
+      class="tab"
+      [routerLink]="['work']"
+      (click)="scrollToElement('3')"
+    >
+      work
+    </a>
   </nav>
 </div>
 <div class="content">
-  <router-outlet></router-outlet>
+  <div id="1" class="welcome">
+    <app-welcome></app-welcome>
+  </div>
+  <div id="2" class="about">
+    <app-about></app-about>
+  </div>
+  <div id="3">
+    <app-projects></app-projects>
+  </div>
+</div>
+<div class="footer">
+  <a class="social" href="{{ github }}"
+    ><i class="fa fa-github fa-3x" aria-hidden="true"></i
+  ></a>
+  <a class="social" href="{{ linkedin }}"
+    ><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i
+  ></a>
+  <a class="social" href="mailto:{{ email }}"
+    ><i class="fa fa-envelope fa-3x" aria-hidden="true"></i
+  ></a>
 </div>
