@@ -47,7 +47,7 @@ export class WelcomeComponent implements OnInit {
       'a Computer Science student.',
       'a nerd.',
       'a gamer.',
-      'a father.',
+      'a dad.',
       'a life-long learner.'
     );
   }

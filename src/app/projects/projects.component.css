@@ -24,16 +24,18 @@
   }
 }
 
-.project-card {
-  color: black;
-  background-color: #49dcb1;
-  width: 400px;
-  height: 400px;
+.card {
+  width: 200px;
+  height: auto;
+  border-color: #212121;
+  border: 2px solid #212121;
+  border-radius: 8px;
+  padding: 10px;
 }
 
-.project-card:hover {
+.card:hover {
   transform: scale(1.05);
-  box-shadow: 10px 10px #102027;
+  box-shadow: 8px 8px #102027;
 }
 
 .card-header {
@@ -43,24 +45,13 @@
 .card-content {
   padding: 10px;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
 
-.card-actions {
+.card-footer {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
-  position: relative;
-  height: 60px;
-}
-
-.socials {
-  position: absolute;
-  left: 5px;
-  bottom: 1px;
-  margin: 0;
-  height: 42px;
-  width: 42px;
+  justify-content: flex-start;
 }

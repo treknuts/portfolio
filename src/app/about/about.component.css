@@ -48,7 +48,7 @@ img {
   position: relative;
   font-family: "Courier New", Courier, monospace;
   height: 100%;
-  width: 40%;
+  width: 60%;
   border-radius: 3px;
   background-color: #cccccc;
 }
@@ -69,6 +69,20 @@ img {
   color: #8bc34a;
 }
 
+.experience {
+  white-space: pre-line;
+}
+
 pre {
   font-family: "Courier New", Courier, monospace;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    font-size: small;
+  }
+
+  .terminal {
+    width: 70%;
+  }
 }

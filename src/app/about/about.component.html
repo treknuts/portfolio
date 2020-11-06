@@ -13,7 +13,7 @@
         ></span>
         ~ > <span class="cmd">echo</span> Trevor.origin
       </p>
-      <pre>    '{{ origin }}'</pre>
+      <p class="out">'{{ origin }}'</p>
       <p>
         <span><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>
         <span class="folder"
@@ -21,7 +21,7 @@
         ></span>
         ~ > <span class="cmd">echo</span> Trevor.education
       </p>
-      <pre>    '{{ education }}'</pre>
+      <p class="out">'{{ education }}'</p>
       <p>
         <span><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>
         <span class="folder">
@@ -29,7 +29,7 @@
         </span>
         ~ > <span class="cmd">echo</span> Trevor.major
       </p>
-      <pre>    '{{ major }}'</pre>
+      <p class="out">'{{ major }}'</p>
       <p>
         <span><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>
         <span class="folder">
@@ -37,11 +37,13 @@
         </span>
         ~ > <span class="cmd">echo</span> Trevor.experience
       </p>
-      <pre>
-   [ 
-       {{ experience.join(",\n       ") }} 
-   ]</pre
-      >
+      <p class="experience">
+        [
+        <br />
+        {{ experience.join(",\n ") }}
+        <br />
+        ]
+      </p>
       <p>
         <span><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>
         <span class="folder">
@@ -49,7 +51,7 @@
         </span>
         ~ > <span class="cmd">echo</span> Trevor.interests
       </p>
-      <pre>   [ {{ interests.join(", ") }} ]</pre>
+      <p class="out">[ {{ interests.join(", ") }} ]</p>
     </div>
   </div>
 </div>
