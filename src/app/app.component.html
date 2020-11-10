@@ -1,20 +1,14 @@
 <div class="navbar">
   <nav class="nav">
     <a
-      id="home"
       class="tab"
       [routerLink]="['welcome']"
-      (click)="scrollToElement('1')"
+      (click)="scrollToElement('welcome')"
     >
       home
     </a>
     <span class="divider">|</span>
-    <a
-      id="about"
-      class="tab"
-      [routerLink]="['about']"
-      (click)="scrollToElement('2')"
-    >
+    <a class="tab" [routerLink]="['about']" (click)="scrollToElement('about')">
       about
     </a>
     <span class="divider">|</span>
@@ -22,21 +16,21 @@
       id="work"
       class="tab"
       [routerLink]="['work']"
-      (click)="scrollToElement('3')"
+      (click)="scrollToElement('projects')"
     >
       work
     </a>
   </nav>
 </div>
 <div class="content">
-  <div id="1" class="welcome">
+  <div id="welcome">
     <app-welcome></app-welcome>
   </div>
-  <div id="2" class="about">
+  <div id="about">
     <app-about></app-about>
   </div>
 
-  <div id="3">
+  <div id="projects">
     <app-projects></app-projects>
   </div>
 </div>

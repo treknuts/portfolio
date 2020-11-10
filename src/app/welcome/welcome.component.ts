@@ -28,8 +28,12 @@ export class WelcomeComponent implements OnInit {
       cursorColor: '#212121',
     });
 
+    const nameWriter = new Typewriter(title, {
+      cursorColor: '#212121',
+      typeColor: 'white',
+    });
+
     const titleWriter = new Typewriter(title, {
-      loop: true,
       cursorColor: '#212121',
       typeColor: 'white',
     });
@@ -40,15 +44,17 @@ export class WelcomeComponent implements OnInit {
       .then(titleWriter.start.bind(titleWriter))
       .start();
 
-    titleWriter.strings(
-      800,
-      'a Software Engineer.',
-      'a Web Developer.',
-      'a Computer Science student.',
-      'a nerd.',
-      'a gamer.',
-      'a dad.',
-      'a life-long learner.'
-    );
+    titleWriter.type('a Software Engineer.');
+
+    // titleWriter.strings(
+    //   800,
+    //   'a Software Engineer.',
+    //   'a Web Developer.',
+    //   'a Comstudent.',
+    //   'a nerd.',
+    //   'a gamer.',
+    //   'a dad.',
+    //   'a life-long learner.'
+    // );
   }
 }

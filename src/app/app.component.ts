@@ -16,8 +16,12 @@ export class AppComponent {
 
   scrollToElement(element: string) {
     console.log(element);
-    this.viewportScroller.setOffset([0, 150]);
-    this.viewportScroller.scrollToAnchor(element);
+    if (element === 'welcome') {
+      this.viewportScroller.scrollToPosition([0, 0]);
+    } else {
+      this.viewportScroller.setOffset([0, 150]);
+      this.viewportScroller.scrollToAnchor(element);
+    }
   }
 
   ngOnInit(): void {}
