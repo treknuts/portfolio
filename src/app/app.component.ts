@@ -16,6 +16,7 @@ export class AppComponent {
 
   scrollToElement(element: string) {
     console.log(element);
+    this.viewportScroller.setOffset([0, 150]);
     this.viewportScroller.scrollToAnchor(element);
   }
 

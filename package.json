@@ -23,7 +23,6 @@
     "@angular/router": "~10.1.1",
     "chart.js": "^2.9.4",
     "file-saver": "^2.0.2",
-    "ng2-charts": "^2.4.2",
     "ngx-page-scroll": "^7.0.3",
     "ngx-page-scroll-core": "^7.0.3",
     "rxjs": "~6.6.0",

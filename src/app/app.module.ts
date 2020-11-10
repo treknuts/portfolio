@@ -9,8 +9,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { SkillChartComponent } from './skill-chart/skill-chart.component';
-import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -18,7 +16,6 @@ import { ChartsModule } from 'ng2-charts';
     ProjectsComponent,
     AboutComponent,
     WelcomeComponent,
-    SkillChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +24,6 @@ import { ChartsModule } from 'ng2-charts';
     MatButtonModule,
     HttpClientModule,
     RouterModule,
-    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

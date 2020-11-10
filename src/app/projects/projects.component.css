@@ -1,11 +1,8 @@
 .card-div {
-  display: flex;
-  margin: 100px;
-  width: 90%;
+  display: block;
+  margin: auto;
+  width: 40%;
   height: auto;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
@@ -27,8 +24,6 @@
 .card {
   display: flex;
   flex-flow: column wrap;
-  width: 80%;
-  height: auto;
   background-color: white;
   border-color: #212121;
   border: 2px solid #212121;
@@ -54,12 +49,10 @@
   align-items: center;
 }
 
-.card-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
-
 a {
   color: #212121;
+}
+
+ul#stack li {
+  display: inline;
 }
