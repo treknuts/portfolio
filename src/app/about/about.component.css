@@ -49,13 +49,13 @@ img {
   font-family: "Courier New", Courier, monospace;
   height: 100%;
   width: 60%;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #cccccc;
 }
 
 .code {
   margin: 15px 0px 0px 0px;
-  border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 5px 5px;
   padding: 12px;
   background-color: #212121;
   color: #cccccc;

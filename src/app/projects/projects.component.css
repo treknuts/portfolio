@@ -2,13 +2,13 @@
   display: block;
   margin: auto;
   width: 40%;
-  height: auto;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .card-div {
-    flex-direction: column;
+    display: block;
+    margin: auto;
+    width: 90%;
   }
 }
 
@@ -22,9 +22,8 @@
 }
 
 .card {
-  display: flex;
-  flex-flow: column wrap;
   background-color: white;
+  margin: 6% 0 6% 0;
   border-color: #212121;
   border: 2px solid #212121;
   border-radius: 8px;
@@ -37,22 +36,27 @@
 }
 
 .card-header {
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
   border-bottom: 2px solid #212121;
 }
 
 .card-content {
-  padding: 10px;
+  padding: 1%;
+  width: 50%;
+}
+
+.card-footer {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
 a {
   color: #212121;
 }
 
-ul#stack li {
-  display: inline;
+ul {
+  list-style: none;
 }
