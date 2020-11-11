@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
         name: 'Robotics Project',
         image: 'assets/robot.png',
         description:
-          'A program that commands a bot through an obstacle course simulation. The program takes advantage of localization, path-planning, and path-following algorithms to navigate to its target destination.',
+          'A Python program that commands a bot through an obstacle course simulation. The program takes advantage of localization, path-planning, and path-following algorithms to navigate to its target destination.',
         githubUrl: 'https://github.com/treknuts/robotics-project',
         icons: ['https://img.icons8.com/color/48/000000/python.png'],
         wip: false,
@@ -33,7 +33,7 @@ export class ProjectsComponent implements OnInit {
         image: 'assets/capstone.png',
         description:
           'Capstone project for Noridian Healthcare Solutions. My team developed an application that allows managers to upload files and track errors on audits. Users have a plethora of filtering options to view results.',
-        githubUrl: 'https://github.com/treknuts/BrickBreaker',
+        githubUrl: 'https://github.com/treknuts/NoridianCapstone',
         icons: [
           'https://img.icons8.com/color/48/000000/python.png',
           'https://img.icons8.com/ios/50/000000/mysql-logo.png',
@@ -80,8 +80,8 @@ export class ProjectsComponent implements OnInit {
         name: 'TODO App',
         image: 'assets/vue-todo.png',
         description:
-          'A web application that allows users to track TODO tasks. Users can organize tasks by priority and progress.',
-        githubUrl: 'https://github.com/treknuts/glucose-diary',
+          'SPA that allows users to track TODO tasks. Users can organize tasks by priority and progress.',
+        githubUrl: 'https://github.com/treknuts/vue-todo',
         icons: [
           'https://img.icons8.com/color/48/000000/vue-js.png',
           'https://img.icons8.com/color/48/000000/javascript.png',

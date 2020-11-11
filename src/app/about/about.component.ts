@@ -22,6 +22,18 @@ export class AboutComponent implements OnInit {
     'Weight lifting',
   ];
 
+  skills: Array<String> = [
+    'Java',
+    'JavaScript',
+    'Python',
+    'PHP',
+    'C/C++',
+    'HTML',
+    'CSS',
+    'SQL',
+    'NoSQL',
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}

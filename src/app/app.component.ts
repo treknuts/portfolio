@@ -19,7 +19,7 @@ export class AppComponent {
     if (element === 'welcome') {
       this.viewportScroller.scrollToPosition([0, 0]);
     } else {
-      this.viewportScroller.setOffset([0, 200]);
+      this.viewportScroller.setOffset([0, 55]);
       this.viewportScroller.scrollToAnchor(element);
     }
   }

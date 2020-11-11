@@ -68,9 +68,14 @@ a {
 
 @media screen and (max-width: 1055px) {
   .card {
-    margin: none;
+    margin: 15px;
   }
   .card-body {
+    margin: 2px;
     display: block;
+  }
+
+  .project-image {
+    margin: 2px;
   }
 }
