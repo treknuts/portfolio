@@ -1,15 +1,18 @@
-.card-div {
-  display: block;
-  margin: auto;
-  width: 40%;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 25% 3% 25%;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: #212121;
+  padding: 1em;
+  color: white;
 }
 
-@media screen and (max-width: 800px) {
-  .card-div {
-    display: block;
-    margin: auto;
-    width: 90%;
-  }
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px #102027;
 }
 
 @keyframes card-effect {
@@ -21,42 +24,53 @@
   }
 }
 
-.card {
-  background-color: white;
-  margin: 6% 0 6% 0;
-  border-color: #212121;
-  border: 2px solid #212121;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 8px 8px #102027;
-}
-
 .card-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 1%;
-  border-bottom: 2px solid #212121;
+  border-bottom: 1px solid white;
+  width: 100%;
 }
 
-.card-content {
-  padding: 1%;
-  width: 50%;
+.card-body {
+  display: inline-flex;
+  margin: 1em;
 }
 
-.card-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+.project-image {
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  margin: 1em;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
-a {
-  color: #212121;
+.card-right {
+  float: right;
+  text-align: center;
+  padding: 1em;
 }
 
 ul {
-  list-style: none;
+  display: inline;
+}
+
+li {
+  display: block;
+  float: right;
+  margin-left: 0.75em;
+}
+
+a {
+  color: white;
+}
+
+@media screen and (max-width: 1055px) {
+  .card {
+    margin: none;
+  }
+  .card-body {
+    display: block;
+  }
 }

@@ -8,8 +8,6 @@
 
 h1,
 h2,
-h3,
-h4,
 h5,
 h6 {
   margin: 8px 8px;
@@ -18,21 +16,55 @@ h6 {
   color: white;
 }
 
-a,
+.link,
 .divider {
-  margin: 10px;
+  float: left;
   font-size: large;
   color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  line-height: 25px;
 }
 
 .navbar {
-  display: flex;
-  flex-flow: row nowrap;
   position: sticky;
+  width: 100%;
   top: 0;
   left: 0;
+  overflow: hidden;
   background-color: #212121;
   z-index: 999;
+}
+
+.socials {
+  float: right;
+}
+
+.social {
+  margin: 0;
+  position: sticky;
+  top: 50%;
+}
+
+nav {
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-buttons {
+    display: none;
+  }
+  .link,
+  .socials {
+    font-size: large;
+    float: none;
+    display: inline-block;
+    text-align: center;
+  }
+  .divider {
+    display: none;
+  }
 }
 
 .content {
@@ -46,22 +78,20 @@ a,
 }
 
 #welcome {
-  margin-top: 17%;
-  margin-bottom: 20%;
+  margin-top: 13%;
+  margin-bottom: 23%;
 }
 
 #about {
-  margin-bottom: 20%;
+  margin-bottom: 18em;
 }
 
-.social {
-  margin: 2%;
+#projects {
+  margin-bottom: 5em;
 }
 
 .footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  background-color: #212121;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
 }

@@ -1,18 +1,14 @@
 .welc-body {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  font-size: x-large;
 }
 
-.intro-div {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+.welcome {
+  margin: 0;
 }
 
 .resume-btn {
+  margin-top: 3%;
   background-color: transparent;
   border-style: solid;
   border-width: 3px;
@@ -22,17 +18,10 @@
   font-weight: 600;
 }
 
-.greeting {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-}
-
-.welcome {
-  color: white;
-  font-size: xxx-large;
-}
-.welcome:after {
-  content: " ";
-  white-space: pre;
+@media screen and (max-width: 700px) {
+  .welc-body {
+    display: block;
+    text-align: center;
+    font-size: large;
+  }
 }

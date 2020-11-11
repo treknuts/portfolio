@@ -1,24 +1,23 @@
-<div class="card-div">
-  <ul *ngFor="let proj of results">
-    <li>
-      <div class="card">
-        <div class="card-header">
-          {{ proj.name }}
-          <a href="{{ proj.githubUrl }}">
-            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-          </a>
-        </div>
-        <div class="card-body">
-          {{ proj.description }}
-        </div>
-        <div class="card-footer">
-          <ul id="stack" *ngFor="let lang of proj['languages']">
-            <li>
-              <img src="{{ langs[lang['name']] }}" alt="/" />
-            </li>
-          </ul>
-        </div>
+<div class="projects">
+  <div class="card" *ngFor="let project of projects">
+    <div class="card-header">
+      <h2>{{ project.name }}</h2>
+      <a href="{{ project.githubUrl }}"
+        ><i class="fa fa-github fa-3x" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="card-body">
+      <img class="project-image" src="{{ project.image }}" />
+      <div class="card-right">
+        <h3 style="white-space: pre-line">{{ project.description }}</h3>
       </div>
-    </li>
-  </ul>
+    </div>
+    <div class="card-footer">
+      <ul>
+        <li *ngFor="let src of project.icons">
+          <img src="{{ src }}" alt="/" />
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

@@ -7,19 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 0;
   font-family: "Rubik";
   font-weight: 600;
-  color: #4f5b62;
   background-color: #f08080;
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  overflow-y: auto;
+  position: sticky;
+  display: block;
+  margin: auto;
   color: white;
 }
 

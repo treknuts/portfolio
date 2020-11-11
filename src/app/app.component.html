@@ -1,26 +1,38 @@
 <div class="navbar">
-  <nav class="nav">
+  <div class="nav-buttons">
     <a
-      class="tab"
+      class="link"
       [routerLink]="['welcome']"
       (click)="scrollToElement('welcome')"
     >
-      home
-    </a>
+      home</a
+    >
     <span class="divider">|</span>
-    <a class="tab" [routerLink]="['about']" (click)="scrollToElement('about')">
-      about
-    </a>
+    <a class="link" [routerLink]="['about']" (click)="scrollToElement('about')"
+      >about</a
+    >
     <span class="divider">|</span>
     <a
       id="work"
-      class="tab"
-      [routerLink]="['work']"
+      class="link"
+      [routerLink]="['projects']"
       (click)="scrollToElement('projects')"
-    >
-      work
+      >projects
     </a>
-  </nav>
+  </div>
+  <div class="socials">
+    <a class="link" href="{{ github }}"
+      ><i class="fa fa-github fa-x" aria-hidden="true"></i
+    ></a>
+    <span class="divider">|</span>
+    <a class="link" href="{{ linkedin }}"
+      ><i class="fa fa-linkedin fa-x" aria-hidden="true"></i
+    ></a>
+    <span class="divider">|</span>
+    <a class="link" href="mailto:{{ email }}"
+      ><i class="fa fa-envelope fa-x" aria-hidden="true"></i
+    ></a>
+  </div>
 </div>
 <div class="content">
   <div id="welcome">
@@ -29,19 +41,8 @@
   <div id="about">
     <app-about></app-about>
   </div>
-
   <div id="projects">
     <app-projects></app-projects>
   </div>
 </div>
-<div class="footer">
-  <a class="social" href="{{ github }}"
-    ><i class="fa fa-github fa-3x" aria-hidden="true"></i
-  ></a>
-  <a class="social" href="{{ linkedin }}"
-    ><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i
-  ></a>
-  <a class="social" href="mailto:{{ email }}"
-    ><i class="fa fa-envelope fa-3x" aria-hidden="true"></i
-  ></a>
-</div>
+<div class="footer"><h3>Developed by Trevor Knutson</h3></div>
