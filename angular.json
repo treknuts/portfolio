@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "resume-app": {
+    "portfolio": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/resume-app",
+            "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,7 +57,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "resume-app:build"
+            "browserTarget": "portfolio:build"
           },
           "configurations": {
             "production": {
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "resume-app:build"
+            "browserTarget": "portfolio:build"
           }
         },
         "test": {
@@ -101,18 +101,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "resume-app:serve"
+            "devServerTarget": "portfolio:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "resume-app:serve:production"
+              "devServerTarget": "portfolio:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "resume-app",
+  "defaultProject": "portfolio",
   "cli": {
     "analytics": "2f3f69c2-df52-4468-9d89-d44925927103"
   }
