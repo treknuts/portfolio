@@ -15,15 +15,6 @@
   box-shadow: 8px 8px #102027;
 }
 
-@keyframes card-effect {
-  from {
-    box-shadow: -10px -10px #102027;
-  }
-  to {
-    box-shadow: 10px 10px #102027;
-  }
-}
-
 .card-header {
   display: flex;
   align-items: center;
@@ -70,6 +61,12 @@ a {
   .card {
     margin: 15px;
   }
+
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
   .card-body {
     margin: 2px;
     display: block;
