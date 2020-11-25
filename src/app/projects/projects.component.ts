@@ -77,6 +77,15 @@ export class ProjectsComponent implements OnInit {
         wip: true,
       },
       {
+        name: 'Sort Visualizer',
+        image: 'assets/sort.gif',
+        description:
+          'Python program using Matplotlib to visualize common sorting algorithms.',
+        githubUrl: 'https://github.com/treknuts/sort-visualizer',
+        icons: ['https://img.icons8.com/color/48/000000/python.png'],
+        wip: true,
+      },
+      {
         name: 'TODO App',
         image: 'assets/vue-todo.png',
         description:
