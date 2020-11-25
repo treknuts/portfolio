@@ -57,6 +57,10 @@ li {
   margin-left: 0.75em;
 }
 
+.social {
+  text-shadow: 2px 2px 4px #212121;
+}
+
 @media screen and (max-width: 1055px) {
   .card {
     margin: 15px;
