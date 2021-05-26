@@ -1,5 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import * as smoothscroll from 'smoothscroll-polyfill';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ export class AppComponent {
   constructor(private viewportScroller: ViewportScroller) {}
 
   scrollToElement(element: string) {
-    console.log(element);
+    window.scroll({ behavior: 'smooth' });
     if (element === 'welcome') {
       this.viewportScroller.scrollToPosition([0, 0]);
     } else {
@@ -24,5 +25,7 @@ export class AppComponent {
     }
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    smoothscroll.polyfill();
+  }
 }

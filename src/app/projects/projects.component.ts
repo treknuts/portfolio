@@ -1,11 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
 
 interface Project {
   name: string;
   description: string;
   githubUrl: string;
   image: string;
-  icons: Array<string>;
+  technologies: Array<Object>;
   wip: boolean;
 }
 
@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
         description:
           'A Python program that commands a bot through an obstacle course simulation. The program takes advantage of localization, path-planning, and path-following algorithms to navigate to its target destination.',
         githubUrl: 'https://github.com/treknuts/robotics-project',
-        icons: ['https://img.icons8.com/color/48/000000/python.png'],
+        technologies: [{ id: 1, name: 'Python' }],
         wip: false,
       },
       {
@@ -34,9 +34,9 @@ export class ProjectsComponent implements OnInit {
         description:
           'Capstone project for Noridian Healthcare Solutions. My team developed an application that allows managers to upload files and track errors on audits. Users have a plethora of filtering options to view results.',
         githubUrl: 'https://github.com/treknuts/NoridianCapstone',
-        icons: [
-          'https://img.icons8.com/color/48/000000/python.png',
-          'https://img.icons8.com/ios/50/000000/mysql-logo.png',
+        technologies: [
+          { id: 1, name: 'Python' },
+          { id: 2, name: 'MySQL' },
         ],
         wip: false,
       },
@@ -45,9 +45,7 @@ export class ProjectsComponent implements OnInit {
         image: 'assets/brickbreaker.png',
         description: 'Remake of the retro arcade game Brick Breaker.',
         githubUrl: 'https://github.com/treknuts/BrickBreaker',
-        icons: [
-          'https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png',
-        ],
+        technologies: [{ id: 1, name: 'Java' }],
         wip: false,
       },
       {
@@ -56,23 +54,9 @@ export class ProjectsComponent implements OnInit {
         description:
           'A Discord chat bot that responds to commands provided in text channels on a server.',
         githubUrl: 'https://github.com/treknuts/chet-bot',
-        icons: [
-          'https://img.icons8.com/color/48/000000/javascript.png',
-          'https://img.icons8.com/color/48/000000/nodejs.png',
-        ],
-        wip: true,
-      },
-      {
-        name: 'Glucose Diary',
-        image: 'assets/glucose.png',
-        description:
-          'A mobile application that allows users to log, predict, and visualize their blood glucose levels.',
-        githubUrl: 'https://github.com/treknuts/glucose-diary',
-        icons: [
-          'https://img.icons8.com/color/48/000000/flutter.png',
-          'https://img.icons8.com/color/48/000000/dart.png',
-          'https://img.icons8.com/ios-filled/50/000000/laravel.png',
-          'https://img.icons8.com/ios/50/000000/mysql-logo.png',
+        technologies: [
+          { id: 1, name: 'JavaScript' },
+          { id: 2, name: 'NodeJs' },
         ],
         wip: true,
       },
@@ -82,7 +66,7 @@ export class ProjectsComponent implements OnInit {
         description:
           'Python program using Matplotlib to visualize common sorting algorithms.',
         githubUrl: 'https://github.com/treknuts/sort-visualizer',
-        icons: ['https://img.icons8.com/color/48/000000/python.png'],
+        technologies: [{ id: 1, name: 'Python' }],
         wip: true,
       },
       {
@@ -91,13 +75,51 @@ export class ProjectsComponent implements OnInit {
         description:
           'SPA that allows users to track TODO tasks. Users can organize tasks by priority and progress.',
         githubUrl: 'https://github.com/treknuts/vue-todo',
-        icons: [
-          'https://img.icons8.com/color/48/000000/vue-js.png',
-          'https://img.icons8.com/color/48/000000/javascript.png',
+        technologies: [
+          { id: 1, name: 'VueJs' },
+          { id: 2, name: 'JavaScript' },
         ],
         wip: false,
       },
+      {
+        name: 'Glucose Diary',
+        image: 'assets/glucose.png',
+        description:
+          'A mobile application that allows users to log, predict, and visualize their blood glucose levels.',
+        githubUrl: 'https://github.com/treknuts/glucose-diary',
+        technologies: [
+          { id: 1, name: 'Flutter' },
+          { id: 2, name: 'Dart' },
+          { id: 3, name: 'Laravel' },
+          { id: 4, name: 'MySQL' },
+        ],
+        wip: true,
+      },
     ];
+  }
+
+  funStuff(element) {
+    element.classList.remove('animate-element');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          element.classList.add('animate-element');
+          return;
+        }
+        element.classList.remove('animate-element');
+      });
+    });
+    observer.observe(element);
+  }
+
+  animateBadges() {
+    document.querySelectorAll('.badge').forEach((element) => {
+      this.funStuff(element);
+    });
+  }
+
+  ngAfterViewInit() {
+    this.animateBadges();
   }
 
   ngOnInit(): void {}

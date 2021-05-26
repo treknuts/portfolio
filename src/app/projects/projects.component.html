@@ -1,23 +1,31 @@
 <div class="projects">
-  <div class="card" *ngFor="let project of projects">
-    <div class="card-header">
-      <h2>{{ project.name }}</h2>
-      <a class="gh-logo" href="{{ project.githubUrl }}"
-        ><i class="fa fa-github fa-3x" aria-hidden="true"></i
-      ></a>
-    </div>
-    <div class="card-body">
-      <img class="project-image" src="{{ project.image }}" />
-      <div class="card-right">
-        <h3 style="white-space: pre-line">{{ project.description }}</h3>
+  <div class="card" *ngFor="let proj of projects">
+    <div class="card-upper">
+      <div class="card-left">
+        <h1>{{ proj.name }}</h1>
+        <h4>
+          {{ proj.description }}
+        </h4>
+        <div class="card-lower">
+          <a href="{{ proj.githubUrl }}">
+            <div class="gh-badge">
+              <span>Github</span><i class="fab fa-github-square fa-2x"></i>
+            </div>
+          </a>
+          <ul class="tech-list">
+            <li
+              style="--animation-order: {{ tech.id }};"
+              class="hidden animate-element badge {{ tech.name }}"
+              *ngFor="let tech of proj.technologies"
+            >
+              {{ tech.name }}
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="card-footer">
-      <ul>
-        <li *ngFor="let src of project.icons">
-          <img class="social" src="{{ src }}" alt="/" />
-        </li>
-      </ul>
+      <div class="card-right">
+        <img src="{{ proj.image }}" alt="/" />
+      </div>
     </div>
   </div>
 </div>

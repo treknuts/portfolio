@@ -13,6 +13,7 @@ export class AboutComponent implements OnInit {
     "'NDSU' => 'Software/Asset Management Assistant'",
     "'NDSU' => 'Web Application Developer'",
     "'Bushel' => 'Software Engineer Intern'",
+    "'NDSU' => 'Software Engineer'",
   ];
   interests: Array<String> = [
     'Coding',
@@ -28,7 +29,7 @@ export class AboutComponent implements OnInit {
     'Python',
     'PHP',
     'C/C++',
-    'HTML',
+    'HTMLj',
     'CSS',
     'SQL',
     'NoSQL',
