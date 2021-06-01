@@ -55,7 +55,7 @@
 
 .card {
   display: block;
-  background: #b980f0;
+  background: #80f0f0;
   height: min-content;
   width: 60%;
   padding: 1em;
@@ -94,7 +94,7 @@
 .gh-badge {
   display: flex;
   align-items: center;
-  background: #b7f080;
+  background: #f0b880;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.25em;
   width: 7rem;
