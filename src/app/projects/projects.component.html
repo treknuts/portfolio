@@ -6,24 +6,25 @@
         <h4>
           {{ proj.description }}
         </h4>
-      </div>
-      <img src="{{ proj.image }}" alt="/" />
-    </div>
-    <div class="card-lower">
-      <a href="{{ proj.githubUrl }}">
-        <div class="gh-badge">
-          <span>Github</span><i class="fas fa-external-link-alt fa-lg"></i>
+        <div class="card-lower">
+          <a href="{{ proj.githubUrl }}">
+            <div class="gh-badge">
+              <span>Github</span><i class="fas fa-external-link-alt fa-lg"></i>
+            </div>
+          </a>
+          <ul class="tech-list">
+            <li
+              style="--animation-order: {{ tech.id }};"
+              class="hidden animate-element badge {{ tech.name }}"
+              *ngFor="let tech of proj.technologies"
+            >
+              {{ tech.name }}
+            </li>
+          </ul>
         </div>
-      </a>
-      <ul class="tech-list">
-        <li
-          style="--animation-order: {{ tech.id }};"
-          class="hidden animate-element badge {{ tech.name }}"
-          *ngFor="let tech of proj.technologies"
-        >
-          {{ tech.name }}
-        </li>
-      </ul>
+      </div>
+
+      <img src="{{ proj.image }}" alt="/" />
     </div>
   </div>
 </div>
