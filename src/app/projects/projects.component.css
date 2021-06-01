@@ -7,7 +7,7 @@
 }
 
 .Python {
-  color: white;
+  color: #dcdcdc;
   background: #275176;
 }
 
@@ -17,15 +17,17 @@
 }
 
 .Java {
-  color: white;
+  color: #dcdcdc;
   background: #db0101;
 }
 
 .MySQL {
   background: #4479a1;
+  color: #dcdcdc;
 }
 
 .Laravel {
+  color: #dcdcdc;
   background: #ff2d20;
 }
 
@@ -48,11 +50,12 @@
   display: grid;
   place-items: center;
   gap: 6em;
+  color: #333333;
 }
 
 .card {
   display: block;
-  background: white;
+  background: #b980f0;
   height: min-content;
   width: 60%;
   padding: 1em;
@@ -63,21 +66,22 @@
 
 .card-upper {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
-.card-left {
+.card-text {
   padding: 0.5em;
   margin: 0;
 }
 
-.card-left h1 {
+.card-text h1 {
   padding: 0;
   margin: 0;
   font-weight: 400;
 }
 
-.card-left h4 {
+.card-text h4 {
   font-weight: 600;
 }
 
@@ -88,17 +92,21 @@
 }
 
 .gh-badge {
-  background: #f08080;
-  padding: 0.5em;
-  border-radius: 0.25em;
-  width: 7em;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-size: 16px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background: #b7f080;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.25em;
+  width: 7rem;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.gh-badge:hover {
+  transform: scale(1.05);
+}
+
+span {
+  margin-right: auto;
 }
 
 .badge {
@@ -135,7 +143,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #282828;
+  color: #333333;
 }
 
 @media screen and (max-width: 768px) {
@@ -148,17 +156,21 @@ a {
     flex-direction: column;
   }
 
-  img {
-    max-height: 125px;
-  }
-
   .card-lower {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  ul {
-    padding: 0;
+  .gh-badge {
+    margin: 2em 0 2em 0;
+  }
+
+  .tech-list {
     margin: 0;
-    display: unset;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
   }
 }

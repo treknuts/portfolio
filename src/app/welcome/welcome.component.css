@@ -4,7 +4,7 @@
 }
 
 .welcome {
-  margin: 0;
+  margin: 0 7em 0 7em;
 }
 
 .resume-btn {
@@ -12,10 +12,17 @@
   background-color: transparent;
   border-style: solid;
   border-width: 3px;
-  border-color: #212121;
-  color: white;
+  border-color: #333333;
+  color: #333333;
   font-size: large;
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+  background-color: #b980f0;
+  color: #b7f080;
+  border-color: #b7f080;
 }
 
 @media screen and (max-width: 700px) {
@@ -23,5 +30,8 @@
     display: block;
     text-align: center;
     font-size: large;
+  }
+  .welcome {
+    margin: 0 2em 0 2em;
   }
 }

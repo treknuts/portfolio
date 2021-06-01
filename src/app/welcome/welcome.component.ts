@@ -8,7 +8,6 @@ import Typewriter from 't-writer.js';
 })
 export class WelcomeComponent implements OnInit {
   @ViewChild('welcome') introElement;
-  @ViewChild('titles') titlesElement;
 
   downloadPdf() {
     const pdfUrl = './assets/Resume.pdf';
@@ -21,40 +20,14 @@ export class WelcomeComponent implements OnInit {
 
   ngAfterViewInit() {
     const hello = this.introElement.nativeElement;
-    const title = this.titlesElement.nativeElement;
 
     const writer = new Typewriter(hello, {
       typeColor: 'white',
-      cursorColor: '#212121',
-    });
-
-    const nameWriter = new Typewriter(title, {
-      cursorColor: '#212121',
-      typeColor: 'white',
-    });
-
-    const titleWriter = new Typewriter(title, {
-      cursorColor: '#212121',
-      typeColor: 'white',
+      cursorColor: '#333333',
     });
 
     writer
-      .type("Hello, World! I'm Trevor Knutson,")
-      .removeCursor()
-      .then(titleWriter.start.bind(titleWriter))
+      .type("Hello, World! I'm Trevor Knutson, a Software Engineer.")
       .start();
-
-    titleWriter.type('a Software Engineer.');
-
-    // titleWriter.strings(
-    //   800,
-    //   'a Software Engineer.',
-    //   'a Web Developer.',
-    //   'a Comstudent.',
-    //   'a nerd.',
-    //   'a gamer.',
-    //   'a dad.',
-    //   'a life-long learner.'
-    // );
   }
 }

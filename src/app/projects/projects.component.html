@@ -1,31 +1,29 @@
 <div class="projects">
   <div class="card" *ngFor="let proj of projects">
     <div class="card-upper">
-      <div class="card-left">
+      <div class="card-text">
         <h1>{{ proj.name }}</h1>
         <h4>
           {{ proj.description }}
         </h4>
-        <div class="card-lower">
-          <a href="{{ proj.githubUrl }}">
-            <div class="gh-badge">
-              <span>Github</span><i class="fab fa-github-square fa-2x"></i>
-            </div>
-          </a>
-          <ul class="tech-list">
-            <li
-              style="--animation-order: {{ tech.id }};"
-              class="hidden animate-element badge {{ tech.name }}"
-              *ngFor="let tech of proj.technologies"
-            >
-              {{ tech.name }}
-            </li>
-          </ul>
+      </div>
+      <img src="{{ proj.image }}" alt="/" />
+    </div>
+    <div class="card-lower">
+      <a href="{{ proj.githubUrl }}">
+        <div class="gh-badge">
+          <span>Github</span><i class="fab fa-github-square fa-2x"></i>
         </div>
-      </div>
-      <div class="card-right">
-        <img src="{{ proj.image }}" alt="/" />
-      </div>
+      </a>
+      <ul class="tech-list">
+        <li
+          style="--animation-order: {{ tech.id }};"
+          class="hidden animate-element badge {{ tech.name }}"
+          *ngFor="let tech of proj.technologies"
+        >
+          {{ tech.name }}
+        </li>
+      </ul>
     </div>
   </div>
 </div>
