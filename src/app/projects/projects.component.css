@@ -11,9 +11,12 @@
   background: #275176;
 }
 
-.Flutter,
-.Dart {
-  background: #1589fd;
+.Android {
+  background: #3ddc84;
+}
+
+.Firebase {
+  background: #ffa60f;
 }
 
 .Java {

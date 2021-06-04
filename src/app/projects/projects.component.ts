@@ -88,10 +88,9 @@ export class ProjectsComponent implements OnInit {
           'A mobile application that allows users to log, predict, and visualize their blood glucose levels.',
         githubUrl: 'https://github.com/treknuts/glucose-diary',
         technologies: [
-          { id: 1, name: 'Flutter' },
-          { id: 2, name: 'Dart' },
-          { id: 3, name: 'Laravel' },
-          { id: 4, name: 'MySQL' },
+          { id: 1, name: 'Android' },
+          { id: 2, name: 'Java' },
+          { id: 4, name: 'Firebase' },
         ],
         wip: true,
       },
