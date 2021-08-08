@@ -147,10 +147,9 @@ li {
 }
 
 img {
-  height: 175px;
+  height: 80%;
   width: auto;
   border-radius: 0.5em;
-  margin-top: auto;
 }
 
 a {
@@ -176,6 +175,11 @@ a {
 
   .gh-badge {
     margin: 2em 0 2em 0;
+  }
+
+  img {
+    height: 50%;
+    width: auto;
   }
 
   .tech-list {

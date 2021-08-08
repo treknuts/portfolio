@@ -21,7 +21,7 @@ export class ProjectsComponent implements OnInit {
     this.projects = [
       {
         name: 'Robotics Project',
-        image: 'assets/robot.png',
+        image: 'assets/robot-mockup.jpg',
         description:
           'A Python program that commands a bot through an obstacle course simulation. The program takes advantage of localization, path-planning, and path-following algorithms to navigate to its target destination.',
         githubUrl: 'https://github.com/treknuts/robotics-project',
@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
       },
       {
         name: 'Audit Error Tracker',
-        image: 'assets/capstone.png',
+        image: 'assets/capstone-mockup.jpg',
         description:
           'Capstone project for Noridian Healthcare Solutions. My team developed an application that allows managers to upload files and track errors on audits. Users have a plethora of filtering options to view results.',
         githubUrl: 'https://github.com/treknuts/NoridianCapstone',
@@ -42,7 +42,7 @@ export class ProjectsComponent implements OnInit {
       },
       {
         name: 'Brick Breaker',
-        image: 'assets/brickbreaker.png',
+        image: 'assets/brickbreaker-mockup.jpg',
         description: 'Remake of the retro arcade game Brick Breaker.',
         githubUrl: 'https://github.com/treknuts/BrickBreaker',
         technologies: [{ id: 1, name: 'Java' }],
@@ -50,7 +50,7 @@ export class ProjectsComponent implements OnInit {
       },
       {
         name: 'ChetBot',
-        image: 'assets/chet.png',
+        image: 'assets/chet-mockup.jpg',
         description:
           'A Discord chat bot that responds to commands provided in text channels on a server.',
         githubUrl: 'https://github.com/treknuts/chet-bot',
@@ -62,7 +62,7 @@ export class ProjectsComponent implements OnInit {
       },
       {
         name: 'Sort Visualizer',
-        image: 'assets/sort.gif',
+        image: 'assets/sort-mockup.gif',
         description:
           'Python program using Matplotlib to visualize common sorting algorithms.',
         githubUrl: 'https://github.com/treknuts/sort-visualizer',
@@ -71,7 +71,7 @@ export class ProjectsComponent implements OnInit {
       },
       {
         name: 'TODO App',
-        image: 'assets/vue-todo.png',
+        image: 'assets/todo-mockup.jpg',
         description:
           'SPA that allows users to track TODO tasks. Users can organize tasks by priority and progress.',
         githubUrl: 'https://github.com/treknuts/vue-todo',
@@ -83,7 +83,7 @@ export class ProjectsComponent implements OnInit {
       },
       {
         name: 'Glucose Diary',
-        image: 'assets/glucose.png',
+        image: 'assets/glucose-mockup.jpg',
         description:
           'A mobile application that allows users to log, predict, and visualize their blood glucose levels.',
         githubUrl: 'https://github.com/treknuts/glucose-diary',
