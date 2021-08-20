@@ -27,6 +27,7 @@ section {
 .spacer {
   position: relative;
   z-index: -1;
+  aspect-ratio: 960/150;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,13 +40,26 @@ section {
 }
 
 .wave2 {
-  aspect-ratio: 960/150;
   background-image: url('../assets/wave2.svg');
 }
 
 .wave3 {
-  aspect-ratio: 960/150;
   background-image: url('../assets/wave3.svg');
+}
+
+.wave4{
+  background-image: url('../assets/wave4.svg');
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  padding: 1em;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  width: 14em;
+  justify-content: space-evenly;
 }
 
 #welcome {
@@ -53,4 +67,40 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#about {
+
+}
+
+#projects {
+
+}
+
+.footer {
+  display: grid;
+  row-gap: 1em;
+  place-content: center;
+  text-align: center;
+}
+
+.netlify-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    width: 100vw;
+    background: #0266ff;
+    z-index: 999;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
