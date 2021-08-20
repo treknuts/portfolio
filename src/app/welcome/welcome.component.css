@@ -1,14 +1,17 @@
-.welc-body {
-  text-align: center;
-  font-size: x-large;
+.title {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
 }
 
-.welcome {
-  margin: 0 7em 0 7em;
+.name {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 64px;
+  line-height: 0.9em;
+  margin: 0;
 }
 
 .resume-btn {
-  margin-top: 3%;
+  margin-top: 1em;
   background-color: transparent;
   border-style: solid;
   border-width: 3px;
@@ -25,13 +28,10 @@
   border-color: white;
 }
 
+
+/* Small screens */
 @media screen and (max-width: 700px) {
-  .welc-body {
-    display: block;
-    text-align: center;
-    font-size: large;
-  }
-  .welcome {
-    margin: 0 2em 0 2em;
+  .name {
+    font-size: 48px;
   }
 }

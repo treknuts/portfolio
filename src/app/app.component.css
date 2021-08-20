@@ -1,98 +1,35 @@
-:host {
-  font-size: 14px;
-  color: #333;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1,
-h2,
-h5,
-h6 {
-  margin: 8px 8px;
-  font-weight: 400;
-  font-size: xxx-large;
-}
-
-.link,
-.divider {
-  float: left;
-  font-size: large;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  line-height: 25px;
-}
-
-.navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: #333333;
-  z-index: 999;
-}
-
-.socials {
-  float: right;
-}
-
-.social {
+h1, h2, h3, h4, h5, p {
   margin: 0;
-  position: sticky;
-  top: 50%;
+  padding: 0;
 }
 
-nav {
-  height: 100%;
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-@media screen and (max-width: 700px) {
-  .nav-buttons {
-    display: none;
-  }
-  .link,
-  .socials {
-    font-size: large;
-    float: none;
-    display: inline-block;
-    text-align: center;
-  }
-  .divider {
-    display: none;
-  }
+section {
+  min-height: 400px;
+  background: #0266ff;
 }
 
-.content {
-  position: absolute;
-  margin-top: 19%;
+.spacer {
+  position: relative;
+  z-index: -1;
+  aspect-ratio: 960/400;
   width: 100%;
-  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.nav {
-  padding: 0.5%;
+.layer1 {
+  background-image: url('../assets/wave.svg');
 }
 
 #welcome {
-  margin-bottom: 23%;
-}
-
-#about {
-  margin-bottom: 18em;
-}
-
-#projects {
-  margin-bottom: 5em;
-}
-
-.footer {
-  bottom: 0;
-  text-align: center;
-  height: 4em;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
