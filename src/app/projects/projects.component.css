@@ -51,8 +51,9 @@
 
 .projects {
   display: grid;
+  grid-template-columns: auto;
   place-items: center;
-  gap: 6em;
+  gap: 4em;
   color: #333333;
 }
 
