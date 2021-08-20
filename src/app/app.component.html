@@ -17,7 +17,11 @@
 </div>
 <section id="welcome" class="blue">
   <app-welcome></app-welcome>
+  <a [routerLink]="['about']" (click)="scrollToElement('about')">
+    <i class="go-down fas fa-chevron-down fa-4x"></i>
+  </a>
 </section>
+
 <div class="spacer wave1"></div>
 <div class="spacer wave2"></div>
 <section id="about" class="pink">
