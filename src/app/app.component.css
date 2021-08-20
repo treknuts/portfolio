@@ -10,21 +10,42 @@ a {
 
 section {
   min-height: 400px;
+}
+
+.blue {
   background: #0266ff;
+}
+
+.pink {
+  background: #ff0267;
+}
+
+.green {
+  background: #67ff02;
 }
 
 .spacer {
   position: relative;
   z-index: -1;
-  aspect-ratio: 960/400;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.layer1 {
+.wave1 {
+  aspect-ratio: 960/300;
   background-image: url('../assets/wave.svg');
+}
+
+.wave2 {
+  aspect-ratio: 960/150;
+  background-image: url('../assets/wave2.svg');
+}
+
+.wave3 {
+  aspect-ratio: 960/150;
+  background-image: url('../assets/wave3.svg');
 }
 
 #welcome {

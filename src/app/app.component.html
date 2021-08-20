@@ -1,11 +1,30 @@
-<section id="welcome">
+<section id="welcome" class="blue">
+  <div class="nav">
+    <a class="link" [routerLink]="['/']" (click)="scrollToElement('welcome')">
+      home
+    </a>
+    <span class="divider">|</span>
+    <a class="link" [routerLink]="['about']" (click)="scrollToElement('about')">
+      about
+    </a>
+    <span class="divider">|</span>
+    <a
+      id="work"
+      class="link"
+      [routerLink]="['projects']"
+      (click)="scrollToElement('projects')"
+      >projects
+    </a>
+  </div>
   <app-welcome></app-welcome>
 </section>
-<div class="spacer layer1"></div>
-<div id="about">
+<div class="spacer wave1"></div>
+<div class="spacer wave2"></div>
+<section id="about" class="pink">
   <app-about></app-about>
-</div>
-<div id="projects">
+</section>
+<div class="spacer wave3"></div>
+<section id="projects" class="green">
   <app-projects></app-projects>
-</div>
+</section>
 <div class="footer"><h3>Developed by Trevor Knutson</h3></div>

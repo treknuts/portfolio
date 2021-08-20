@@ -19,15 +19,15 @@ export class WelcomeComponent implements OnInit {
   ngOnInit(): void {}
 
   ngAfterViewInit() {
-    const hello = this.introElement.nativeElement;
+    // const hello = this.introElement.nativeElement;
 
-    const writer = new Typewriter(hello, {
-      typeColor: 'white',
-      cursorColor: '#333333',
-    });
+    // const writer = new Typewriter(hello, {
+    //   typeColor: 'white',
+    //   cursorColor: '#333333',
+    // });
 
-    writer
-      .type("Hello, World! I'm Trevor Knutson, a Software Engineer.")
-      .start();
+    // writer
+    //   .type("Hello, World! I'm Trevor Knutson, a Software Engineer.")
+    //   .start();
   }
 }
