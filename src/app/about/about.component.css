@@ -5,6 +5,7 @@
   justify-content: center;
   align-content: center;
   width: 100%;
+  
 }
 
 img {
@@ -59,6 +60,8 @@ img {
   padding: 12px;
   background-color: #333333;
   color: #cccccc;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .folder {

@@ -5,7 +5,19 @@ h1, h2, h3, h4, h5, p {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+
+a:hover {
+  background: #F08080;
+  padding: 0 0.25em 0 0.25em;
+  border-radius: 5px;
+}
+
+.divider {
+  font-weight: lighter;
+  color: #333333;
 }
 
 section {
@@ -60,6 +72,8 @@ section {
   display: flex;
   width: 14em;
   justify-content: space-evenly;
+  align-items: center;
+  z-index: 1001;
 }
 
 #welcome {
@@ -98,7 +112,7 @@ section {
   .nav {
     width: 100vw;
     background: #0266ff;
-    z-index: 999;
+    z-index: 1001;
     bottom: 0;
     display: flex;
     justify-content: space-evenly;

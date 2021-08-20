@@ -10,6 +10,11 @@
   margin: 0;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
 .resume-btn {
   margin-top: 1em;
   background-color: transparent;
