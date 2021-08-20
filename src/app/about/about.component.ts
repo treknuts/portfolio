@@ -17,6 +17,7 @@ export class AboutComponent implements OnInit {
   ];
   interests: Array<String> = [
     'Coding',
+    'Golf',
     'Caffeine',
     'Gaming',
     'Snowboarding',
@@ -29,7 +30,7 @@ export class AboutComponent implements OnInit {
     'Python',
     'PHP',
     'C/C++',
-    'HTMLj',
+    'HTML',
     'CSS',
     'SQL',
     'NoSQL',
