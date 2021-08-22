@@ -59,7 +59,9 @@
 
 .card {
   display: block;
-  background: #80f0f0;
+  /* background: #80f0f0; */
+  background: #f08080;
+  color: #333333;
   height: min-content;
   width: 60%;
   padding: 1em;

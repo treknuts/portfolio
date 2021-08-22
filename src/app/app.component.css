@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0;
   padding: 0;
 }
@@ -11,9 +16,11 @@ a {
 @keyframes bounce {
   0% {
     transform: translateY(0%);
-  } 50% {
+  }
+  50% {
     transform: translateY(10%);
-  } 100% {
+  }
+  100% {
     transform: translateY(0%);
   }
 }
@@ -33,7 +40,7 @@ a {
 }
 
 .link:hover {
-  background: #F08080;
+  background: #f08080;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -73,19 +80,19 @@ section {
 
 .wave1 {
   aspect-ratio: 960/300;
-  background-image: url('../assets/wave.svg');
+  background-image: url("../assets/wave.svg");
 }
 
 .wave2 {
-  background-image: url('../assets/wave2.svg');
+  background-image: url("../assets/wave2.svg");
 }
 
 .wave3 {
-  background-image: url('../assets/wave3.svg');
+  background-image: url("../assets/wave3.svg");
 }
 
-.wave4{
-  background-image: url('../assets/wave4.svg');
+.wave4 {
+  background-image: url("../assets/wave4.svg");
 }
 
 .nav {
@@ -110,11 +117,9 @@ section {
 }
 
 #about {
-
 }
 
 #projects {
-
 }
 
 .footer {
