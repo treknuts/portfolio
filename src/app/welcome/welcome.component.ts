@@ -10,7 +10,8 @@ export class WelcomeComponent implements OnInit {
   @ViewChild('welcome') introElement;
 
   downloadPdf() {
-    const pdfUrl = './assets/Resume.pdf';
+    const pdfUrl =
+      'https://treknuts-image-bucket.s3.us-east-2.amazonaws.com/Resume.pdf';
     window.open(pdfUrl);
   }
 
@@ -20,12 +21,10 @@ export class WelcomeComponent implements OnInit {
 
   ngAfterViewInit() {
     // const hello = this.introElement.nativeElement;
-
     // const writer = new Typewriter(hello, {
     //   typeColor: 'white',
     //   cursorColor: '#333333',
     // });
-
     // writer
     //   .type("Hello, World! I'm Trevor Knutson, a Software Engineer.")
     //   .start();

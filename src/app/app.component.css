@@ -80,19 +80,19 @@ section {
 
 .wave1 {
   aspect-ratio: 960/300;
-  background-image: url("../assets/wave.svg");
+  background-image: url("https://treknuts-image-bucket.s3.us-east-2.amazonaws.com/projects-images/wave.svg");
 }
 
 .wave2 {
-  background-image: url("../assets/wave2.svg");
+  background-image: url("https://treknuts-image-bucket.s3.us-east-2.amazonaws.com/projects-images/wave2.svg");
 }
 
 .wave3 {
-  background-image: url("../assets/wave3.svg");
+  background-image: url("https://treknuts-image-bucket.s3.us-east-2.amazonaws.com/projects-images/wave3.svg");
 }
 
 .wave4 {
-  background-image: url("../assets/wave4.svg");
+  background-image: url("https://treknuts-image-bucket.s3.us-east-2.amazonaws.com/projects-images/wave4.svg");
 }
 
 .nav {
