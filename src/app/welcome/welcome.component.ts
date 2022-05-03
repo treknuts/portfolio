@@ -11,7 +11,7 @@ export class WelcomeComponent implements OnInit {
 
   downloadPdf() {
     const pdfUrl =
-      'https://treknuts-image-bucket.s3.us-east-2.amazonaws.com/Resume.pdf';
+      'https://treknuts-image-bucket.s3.us-east-2.amazonaws.com/resume-2022.pdf';
     window.open(pdfUrl);
   }
 
